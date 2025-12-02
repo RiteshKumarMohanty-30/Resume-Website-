@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ritesh Kumar Mohanty — Resume</title>
+  <meta name="description" content="Professional resume — Ritesh Kumar Mohanty" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f62fe; 
+      --radius:12px;
+      --max-width:920px;
+      --gap:18px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: #111827;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);}
+
+    .container{
+      max-width:var(--max-width);margin:28px auto;padding:22px;
+    }
+
+    .resume{
+      display:grid;grid-template-columns:320px 1fr;gap:var(--gap);
+      align-items:start;min-height:60vh;
+    }
+    .profile-card{
+      background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 6px 18px rgba(12,20,30,0.06);
+      position:sticky;top:28px;height:fit-content;
+    }
+
+    .photo{width:110px;height:110px;border-radius:50%;overflow:hidden;border:3px solid #e6eefc;margin-bottom:12px}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+    h1{font-size:20px;margin:0 0 4px 0}
+    .title{font-weight:600;color:var(--muted);font-size:13px;margin-bottom:8px}
+    .contact{font-size:13px;color:var(--muted);line-height:1.5}
+    .socials{display:flex;gap:8px;margin-top:12px}
+    .socials a{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;text-decoration:none;background:#f3f6ff;color:var(--accent);font-weight:600;font-size:13px}
+    .main-card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 6px 18px rgba(12,20,30,0.04)}
+     section{margin-bottom:18px}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:15px}
+    .summary{font-size:14px;color:var(--muted);line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f3f7ff;padding:8px 10px;border-radius:999px;font-weight:600;font-size:13px;color:var(--accent)}
+    .item{padding:10px;border-radius:10px;border:1px dashed rgba(15,98,254,0.06);margin-bottom:10px}
+    .item h3{margin:0;font-size:14px}
+    .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    .desc{margin-top:8px;color:var(--muted);font-size:14px}
+    .two-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media print{
+      body{background:white}
+      .container{box-shadow:none;margin:0}
+      .resume{grid-template-columns:1fr}
+      .profile-card{position:static}
+    }
+    @media (max-width:880px){
+      .resume{grid-template-columns:1fr;}
+      .profile-card{position:static;margin-bottom:12px}
+      .two-cols{grid-template-columns:1fr}
+    }
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 8px;background:#f6f9ff;border-radius:8px;font-weight:600}
+    a:focus{outline:3px solid rgba(15,98,254,0.16);outline-offset:3px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="resume" role="main" aria-label="Resume of Ritesh Kumar Mohanty">
+
+      <!-- LEFT: profile -->
+      <aside class="profile-card" aria-labelledby="name">
+        <div class="photo" aria-hidden="true">
+          <!-- replace src with your photo file -->
+          <img src="C:\Users\KIIT0001\Desktop\NSS Photos\1000239412.jpg" alt="Ritesh Kumar Mohanty Photo">
+        </div>
+        <header>
+          <h1 id="name">Ritesh Kumar Mohanty</h1>
+          <div class="title">Engineering Student · Event Manager · Web & Data Enthusiast</div>
+        </header>
+
+        <div class="contact" style="margin-top:12px">
+          <div><strong>Email:</strong> <a href="mailto:riteshmohanty@gmail.com">riteshmohanty@gmail.com</a></div>
+          <div><strong>Phone:</strong> <a href="tel:+919430000000">+91 9430 000 000</a></div>
+          <div><strong>Location:</strong> Puri, Odisha, India</div>
+        </div>
+
+        <div class="socials" aria-label="Profiles">
+          <a href="www.linkedin.com/in/ritesh-kumar-mohanty-17a366271" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/RiteshKumarMohanty-30" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <hr style="margin:16px 0;border:none;border-top:1px solid #eef2ff">
+
+        <div>
+          <h3 style="margin:0 0 8px 0;font-size:14px">Skills</h3>
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">WordPress</span>
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Event Management</span>
+          </div>
+        </div>
+      </aside>
+      <main class="main-card">
+
+        <section aria-labelledby="summary-title">
+          <div class="section-title"><h2 id="summary-title">Summary</h2></div>
+          <p class="summary">A motivated engineering student with hands-on experience in event management, web development and data analysis. Experienced in organizing large cultural and agricultural fairs, developing WordPress sites and building small IoT/data projects. Keen to apply technical and organizational skills in internships and collaborative projects.</p>
+        </section>
+
+        <section aria-labelledby="projects-title">
+          <div class="section-title"><h2 id="projects-title">Projects</h2></div>
+
+          <article class="item" aria-labelledby="proj1">
+            <h3 id="proj1">FolkFair.in (Event Website)</h3>
+            <div class="meta">WordPress • Single developer • Design & Deployment</div>
+            <p class="desc">Designed and deployed the official website for the Folk Fair using WordPress, custom theme tweaks, and responsive layouts. Integrated ticketing details and gallery management.</p>
+          </article>
+
+          <article class="item" aria-labelledby="proj2">
+            <h3 id="proj2">IoT Temperature & Humidity Monitor</h3>
+            <div class="meta">Arduino Uno • DHT22 • Basic IoT</div>
+            <p class="desc">Prototype that reads temp & humidity and sends periodic updates to a cloud endpoint for visualization and alerts.</p>
+          </article>
+
+        </section>
+
+        <section aria-labelledby="exp-title">
+          <div class="section-title"><h2 id="exp-title">Work Experience</h2></div>
+
+          <div class="item">
+            <h3>Event Management Lead — Cyber Peace Corps, KIIT</h3>
+            <div class="meta">Role: Lead • Dates: 2024 — Present</div>
+            <p class="desc">Led logistics, vendor coordination and digital communications for campus events; managed budgets and on-site teams for cultural festivals.</p>
+          </div>
+
+          <div class="item">
+            <h3>IT Manager — Local NGO</h3>
+            <div class="meta">Role: IT Manager • Dates: 2024</div>
+            <p class="desc">Maintained the NGO's website, produced presentation briefs, and secured sponsorships through data-driven proposals.</p>
+          </div>
+
+        </section>
+
+        <section aria-labelledby="edu-title">
+          <div class="section-title"><h2 id="edu-title">Education</h2></div>
+
+          <div class="two-cols">
+            <div class="item">
+              <h3>B.Tech — Electronics & Computer Science Engineering (ECSE)</h3>
+              <div class="meta">KIIT Deemed to be University • Roll: 2330107 • 2023 — Present</div>
+              <p class="desc">Relevant coursework: Operating Systems, Embedded Systems, VLSI, Digital Design.</p>
+            </div>
+
+            <div class="item">
+              <h3>Certifications & Awards</h3>
+              <div class="meta">Google Professional Certificates — Data Analysis</div>
+              <p class="desc">Received awards for event management and contributions to local cultural festivals.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>
